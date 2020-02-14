@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Revisao JS</title>
+    </head>
+    <body onload="BemVindo();">
+        <span id="mensagem"></span>
+        <form>
+            <label for="produto">Produto</label>
+            <input id="produto"> <br>
+            <label for="quantidade">Quantidade</label>
+            <input id="quantidade" type="number" onchange="CalcularPrecoTotal();"> <br>
+            <label for="preco">Preço</label>
+            <input id="preco" type="number" onchange="CalcularPrecoTotal();"> <br>
+            <span id="total-produto"></span> <br>
+            <button type="button" onclick="Adicionar();">Adicionar</button>   
+        </form>
+        <table id="listaprodutos">
+            <tr>
+                <td>Produto</td>
+                <td>Quantidade</td>
+                <td>Preço</td>
+                <td>Total</td>
+            </tr>
+        </table>
+        <span id="totalgeral"> </span>
+        <script src="2.js"></script>
+       </body>
+</html>
